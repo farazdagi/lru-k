@@ -1,0 +1,15 @@
+[package]
+name = "lru-k"
+version = "0.1.0"
+edition = "2024"
+authors = ["Victor Farazdagi <farazdagi@gmail.com>"]
+description = "A space-efficient (no need for vnodes) multi-probe consistent hashing algorithm"
+homepage = "https://github.com/farazdagi/lru-k"
+repository = "https://github.com/farazdagi/lru-k"
+documentation = "https://docs.rs/lru-k"
+readme = "README.md"
+license = "MIT"
+keywords = ["LRU", "cache"]
+categories = ["caching", "no-std", "data-structures"]
+
+[dependencies]

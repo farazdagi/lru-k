@@ -13,3 +13,4 @@ keywords = ["LRU", "cache"]
 categories = ["caching", "no-std", "data-structures"]
 
 [dependencies]
+lru = "0.16"

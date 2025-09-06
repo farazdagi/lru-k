@@ -13,4 +13,14 @@ keywords = ["LRU", "cache"]
 categories = ["caching", "no-std", "data-structures"]
 
 [dependencies]
+
+[dev-dependencies]
 lru = "0.16"
+pretty_assertions = "1"
+rand = "0.9"
+
+[workspace.lints.clippy]
+redundant_test_prefix = "deny"
+
+[lints]
+workspace = true

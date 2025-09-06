@@ -10,7 +10,7 @@ An implementation of a LRU-k cache based on the [The LRU-K page replacement algo
 ## Features
 
 - [ ] Scan-resistant, as it tracks the `k` most recent accesses.
-- [ ] Simple API, `push`, `get`, `get_mut`, `pop`. All methods are `0(1)`.
+- [ ] Simple API, `put`, `get`, `get_mut`, `pop`. All methods are `0(1)`.
 - [ ] Drop-in replacement for [`lru`](https://crates.io/crates/lru) crate.
 
 ## Usage

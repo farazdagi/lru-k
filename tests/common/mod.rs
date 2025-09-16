@@ -8,7 +8,7 @@ use rand::{
 };
 
 pub const NUM_HOT_ITEMS: usize = 10_000;
-pub const CACHE_CAPACITY: usize = NUM_HOT_ITEMS as usize;
+pub const CACHE_CAPACITY: usize = NUM_HOT_ITEMS;
 
 pub struct Metrics {
     hits: u64,

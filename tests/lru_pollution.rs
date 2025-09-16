@@ -9,7 +9,7 @@ use pretty_assertions::assert_eq;
 use crate::common::Runner;
 
 #[test]
-fn test_lru_cache() {
+fn lru_cache() {
     let mut cache = LruCache::<u64, ()>::new(NonZeroUsize::new(CACHE_CAPACITY).unwrap());
 
     let mut runner = Runner::new(&mut cache, 42);

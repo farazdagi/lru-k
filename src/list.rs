@@ -112,7 +112,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_push_and_pop_front() {
+    fn push_and_pop_front() {
         let mut list = List::<3>::new();
 
         list.push_front(0);
@@ -127,7 +127,7 @@ mod tests {
     }
 
     #[test]
-    fn test_push_and_pop_back() {
+    fn push_and_pop_back() {
         let mut list = List::<2>::new();
 
         list.push_front(0);
@@ -140,7 +140,7 @@ mod tests {
     }
 
     #[test]
-    fn test_remove_middle() {
+    fn remove_middle() {
         let mut list = List::<3>::new();
 
         list.push_front(0);

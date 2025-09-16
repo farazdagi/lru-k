@@ -5,13 +5,16 @@
 [![unsafe forbidden](https://img.shields.io/badge/unsafe-forbidden-success.svg)](https://github.com/rust-secure-code/safety-dance/)
 [![dependencies](https://deps.rs/repo/github/farazdagi/lru-k/status.svg)](https://deps.rs/repo/github/farazdagi/lru-k)
 
-An implementation of a LRU-k cache based on the [The LRU-K page replacement algorithm for database disk buffering](https://dl.acm.org/doi/pdf/10.1145/170036.170081) paper.
+A fixed-size thread safe LRU-k cache.
+
+The design is based on the [The LRU-K page replacement algorithm for database disk buffering](https://dl.acm.org/doi/pdf/10.1145/170036.170081) paper.
 
 ## Features
 
 - [ ] Scan-resistant, as it tracks the `k` most recent accesses.
-- [ ] Simple API, `put`, `get`, `get_mut`, `pop`. All methods are `0(1)`.
-- [ ] Drop-in replacement for [`lru`](https://crates.io/crates/lru) crate.
+- [ ] Simple default API, `put`, `get`, `get_mut`, `pop`. All methods are `0(1)`. Drop-in replacement for [`lru`](https://crates.io/crates/lru) crate.
+- [ ] Enhanced API, for more esoteric use cases. Similar to `HashMap`.
+- [ ] Compatible with `#[no_std]`,  so can be used for embedded programming
 
 ## Usage
 
